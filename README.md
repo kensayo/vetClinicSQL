@@ -50,13 +50,13 @@ With this project we improve the performance for the database.
  - Create the database using the `schema.sql` file
  - Add the email column inside the owners table by typing `ALTER TABLE owners ADD COLUMN email VARCHAR(120);`
  - Populate your database by adding the following commands `data.sql` 
- - To check the performance, run
+- To check the performance, run
 
- `explain analyze SELECT COUNT(*) FROM visits where animal_id = 4;`
+    - `explain analyze SELECT COUNT(*) FROM visits where animal_id = 4;`
 
-`explain analyze SELECT * FROM visits where vet_id = 2;`
+    - `explain analyze SELECT * FROM visits where vet_id = 2;`
 
-`explain analyze SELECT * FROM owners where email = 'owner_18327@mail.com';`
+    - `explain analyze SELECT * FROM owners where email = 'owner_18327@mail.com';`
 
 ## Author
 
