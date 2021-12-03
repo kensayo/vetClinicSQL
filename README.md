@@ -47,9 +47,9 @@ With this project we improve the performance for the database.
  - Change directory `cd` into the folder just created from the project.
 
  - Open postgreSQL
- - Create the database using the `schema.sql` file
+ - Create the database using the [`schema.sql`](./schema.sql) file
  - Add the email column inside the owners table by typing `ALTER TABLE owners ADD COLUMN email VARCHAR(120);`
- - Populate your database by adding the following commands `data.sql` 
+ - Populate your database with the [`data.sql`](./data.sql) file
 - To check the performance, run
 
     - `explain analyze SELECT COUNT(*) FROM visits where animal_id = 4;`
